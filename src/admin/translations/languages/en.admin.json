@@ -208,8 +208,11 @@
         },
         "json": {
             "fieldJsonUrl": "JSON API URL",
+            "fieldSessionizeUrl": "Sessionize API URL",
             "jsonUrlRequired": "The API URL is required",
+            "sessionizeUrlRequired": "The Sessionize API URL is required",
             "jsonUrlValid": "The API URL must be a valid url",
+            "sessionizeUrlValid": "The API URL must be a valid url",
             "showJsonModel": "Show JSON model"
         },
         "setupMode": "Setup Mode",
