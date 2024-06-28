@@ -2,8 +2,8 @@ import { isString } from '../../../utils/stringUtils'
 
 class SessionizeAPI {
     constructor(config) {
-        if (config.jsonUrl !== this.jsonUrl) {
-            this.jsonUrl = config.jsonUrl
+        if (config.sessionizeUrl !== this.sessionizeUrl) {
+            this.sessionizeUrl = config.sessionizeUrl
             this.data = null
         }
     }
@@ -12,7 +12,7 @@ class SessionizeAPI {
         if (this.data) {
             return Promise.resolve(this.data)
         }
-        return fetch(this.jsonUrl).then(async (response) => {
+        return fetch(this.sessionizeUrl).then(async (response) => {
             if (response.ok) {
                 this.data = await response.json()
                 if (this.data.sessions) {

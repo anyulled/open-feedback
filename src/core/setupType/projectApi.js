@@ -5,6 +5,7 @@ import OpenfeedbackApi from './openfeedback/OpefeedbackApi'
 export const PROJECT_TYPE_HOVERBOARDV2 = 'hoverboardv2'
 export const PROJECT_TYPE_JSONURL = 'jsonurl'
 export const PROJECT_TYPE_OPENFEEDBACK = 'openfeedbackv1'
+export const PROJECT_TYPE_SESSIONIZE = 'sessionize'
 
 const notImplementApi = {
     // eslint-disable-next-line no-unused-vars
