@@ -8,6 +8,7 @@ import {
     PROJECT_TYPE_HOVERBOARDV2,
     PROJECT_TYPE_JSONURL,
     PROJECT_TYPE_OPENFEEDBACK,
+    PROJECT_TYPE_SESSIONIZE,
 } from '../../../../core/setupType/projectApi'
 import SetupHoverboardv2 from '../../setupTypeForms/SetupHoverboardv2'
 import { useTranslation } from 'react-i18next'
@@ -65,6 +66,9 @@ const SetupForm = () => {
                 />
             )
             break
+        case PROJECT_TYPE_SESSIONIZE:
+            setupTypeComponent = <SetupSessionize />
+
         default:
             setupTypeComponent = <p>Not developed</p>
             break
@@ -75,7 +79,8 @@ const SetupForm = () => {
             <Box marginBottom={2}>
                 <TranslatedTypography
                     variant="h5"
-                    i18nKey="settingsSetup.setupMode">
+                    i18nKey="settingsSetup.setupMode"
+                >
                     Setup Mode
                 </TranslatedTypography>
                 <TranslatedTypography i18nKey="settingsSetup.cannotChange">
